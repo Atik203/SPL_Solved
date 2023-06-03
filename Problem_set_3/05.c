@@ -1,29 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int number;
-    scanf("%d", &number);
+   int a;
+   scanf("%d", &a);
 
-    if (number <= 0) 
-    {
-        printf("No\n");
-        return 0;
-    }
-
-    while (number != 1) 
-    {
-        if (number % 2 != 0)
-         {
-            printf("No\n");
-            return 0;
-        }
-        else
-        {
-            number /= 2; 
-        }
-        }
-
-    printf("Yes\n");
-
-    return 0;
+   if ((a > 0) && ((a & (a - 1)) == 0)) 
+   {
+      printf("YES");
+   } else 
+   {
+      printf("NO");
+   }
+   return 0;
 }
