@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int globalVar = 10; // Global variable
+int Var = 10; // Global variable
 
-int main() {
+int main() 
+{
 
-    printf("A. Global: %d\n", globalVar); // Step A
+    printf("A. Global: %d\n",Var); // Step A
     
-    int localVar = 20; // Local variable with the same name
-    printf("B. Local: %d\n", localVar); // Step B
-    printf("C. Global: %d\n", globalVar); // Step C
+    int Var = 20; // Local variable with the same name
+    printf("B. Local: %d\n",Var); // Step B
+    printf("C. Global: %d\n",Var); // Step C
 
     return 0;
 }
