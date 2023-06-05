@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int X;
-    scanf("%d", &X);
-
-    printf("X++ : %d\n", X++);
-    printf("++X : %d\n", X++);
-    printf("X-- : %d\n", X-2);
-    printf("--X : %d\n", X-3);
+    int x,a;
+    scanf("%d", &x);
+    a=x;
+    printf("X++ : %d\n", a++);
+    a=x;
+    printf("++X : %d\n", ++a);
+    a=x;
+    printf("X-- : %d\n", a--);
+    a=x;
+    printf("--X : %d\n", --a);
 
     return 0;
 }

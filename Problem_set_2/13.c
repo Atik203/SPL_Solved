@@ -6,10 +6,9 @@ int main() {
   double result;
   scanf("%lf", &x);
 
-  x=(x*pi/180);
+   x=(x*pi/180);
   result = 2 * (cos(x)*cos(x)) - sqrt(3) * sin(x) + sin (x / 2);
 
-  printf("%.8lf\n", result);
-
+  printf("%.6lf\n", result);
   return 0;
 }
