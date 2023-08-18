@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h> // For using bool data type
 
 int main()
 {
@@ -7,20 +6,20 @@ int main()
     fgets(s, 100, stdin);
 
     int count = 0;
-    bool inWord = false;
+    int flag = 0;
 
     for (int i = 0; s[i] != '\0'; i++)
     {
         if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
         {
-            inWord = false;
+            flag = 0;
         }
         else
         {
-            if (inWord == false)
+            if (flag == 0)
             {
                 count++;
-                inWord = true;
+                flag = 1;
             }
         }
     }
